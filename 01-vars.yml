@@ -36,3 +36,4 @@
     - name: Print OUT var
       ansible.builtin.debug:
         msg: "{{ OUT }}"
+
