@@ -15,3 +15,5 @@
         - name: Print when errors
           ansible.builtin.debug:
             msg: ' I caught an error, can do stuff here to fix it, :-)'
+
+#rescue command is useful even if there is an error it provides output
