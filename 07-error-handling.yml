@@ -1,0 +1,6 @@
+- name: Demo on Error handling
+  hosts: localhost
+  tasks:
+    - name: Some shell command
+      ansible.builtin.shell: ls
+      ignore_errors: yes
