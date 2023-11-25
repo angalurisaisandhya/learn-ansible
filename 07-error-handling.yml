@@ -5,6 +5,7 @@
       ansible.builtin.shell: ls
       ignore_errors: yes
 
-- name: Print Hello
-  ansible.builtin.debug:
-    msg: Hello
+    - name: Print Hello
+      ansible.builtin.debug:
+        msg: Hello
+
