@@ -4,3 +4,7 @@
     - name: Some shell command
       ansible.builtin.shell: ls
       ignore_errors: yes
+
+- name: Print Hello
+  ansible.builtin.debug:
+    msg: Hello
