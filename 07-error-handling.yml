@@ -1,0 +1,11 @@
+- name: Demo on Error handling
+  hosts: localhost
+  tasks:
+    - name: Some shell command
+      ansible.builtin.shell: ls
+      ignore_errors: yes
+
+    - name: Print Hello
+      ansible.builtin.debug:
+        msg: Hello
+# ignore_errors is given even it is a failure it continues the program excluding the error and goes forward or if you want to proceed ignoring a task you can use ignore_errors
